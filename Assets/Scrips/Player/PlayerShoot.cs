@@ -28,7 +28,7 @@ public class PlayerShoot : MonoBehaviour
             obj.transform.position = transform.position;
             shootTimer = 0;
         }
-        if (Input.GetKeyDown(KeyCode.Mouse1) && shootTimer >= shootDelayTime * 1.25)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && shootTimer >= shootDelayTime * 2)
         {
             GameObject obj = Instantiate(bulletPrefab2);
             obj.transform.position = transform.position;
