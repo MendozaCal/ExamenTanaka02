@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class HealthSystem : MonoBehaviour
+public class HealthSystemEnemy : MonoBehaviour
 {
     [SerializeField]
     int life;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("PlayerBullet"))
         {
             RecibirDaño(collision.gameObject.GetComponent<Damage>().GetDamage());
         }
@@ -19,7 +20,6 @@ public class HealthSystem : MonoBehaviour
         if (life <= 0)
         {
             Destroy(this.gameObject);
-
         }
     }
 }

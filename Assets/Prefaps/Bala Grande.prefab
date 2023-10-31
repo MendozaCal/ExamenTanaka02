@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2779683342047169159}
   - component: {fileID: 2779008124944106579}
   - component: {fileID: 8426209088315007291}
+  - component: {fileID: -127378613183077029}
   m_Layer: 0
   m_Name: Bala Grande
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,5 +163,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb497ec66203342b01cdd59bd90127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2
   direction: {x: 1, y: 1}
+--- !u!114 &-127378613183077029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238593526196174166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40484c5498a2044ca189ed202b1e90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
